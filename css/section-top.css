@@ -1,0 +1,116 @@
+.section-top{
+    padding: 76px 0;
+    /* display: flex;
+    align-items: center;
+    align-content: center; */
+    padding-bottom: 150px;
+    height: 90vh;
+}
+.section-top__container{
+    margin-top: 40px;
+}
+.section-top__header{
+    width: 587px;
+    margin: 0 auto;
+    font-weight: 900;
+}
+.section-top__content{
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    width: calc(100% - 120px);
+    gap: 10px;
+}
+.content__img{
+    /* background: url(..img/girl.png) no-repeat; */
+    width: 60%;
+    height: 500px;
+    background: red;
+}
+.content__calc{
+    width: 40%;
+    background: #000;
+}
+
+
+/* Section STEPS */
+
+.section-steps{
+    background: #007aff;
+    padding: 40px 0;
+}
+.section-steps__header{
+    width: 327px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+}
+.section-steps__steps{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.step{
+    background: white;
+    width: 550px;
+    height: 200px;
+    border-radius: 0.42rem;
+    border: #ebebeb 1px solid;
+    /* box-shadow: 0 0 2px 2px #eee; */
+    padding: 20px 45px;
+    display: flex;
+    align-items: center;
+}
+.step__info{
+    margin-left: 20px;
+    color: #3e68b1;
+}
+.step__title{
+    font-weight: 700;
+}
+.step__img {
+    width: 90px;
+}
+.step__text{
+    color: #3e68b1;
+}
+
+/* Section REVIEW */
+
+.section-review{
+    padding-top: 100px;
+    background-color: #f8f8f8;
+}
+.section-review__header{
+    width: 375px;
+    margin: 0 auto;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.section-review__reviews{
+    margin-top: 40px;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.reviews__review{
+    width: 330px;
+    height: 270px;
+    background: white;
+    padding: 0 25px 25px 25px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    border-radius: 7px 7px;
+    box-shadow: rgb(33 33 33 / 6%) 0 4px 24px 5px
+}
+.review__name{
+    font-size: 15px;
+    margin: 35px auto;
+}
+.review__text{
+    color: #61908a;
+    font-size: 18px;
+    font-style: italic;
+}
