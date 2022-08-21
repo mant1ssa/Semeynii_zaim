@@ -29,15 +29,102 @@
 }
 .content__calc{
     width: 40%;
-    background: #000;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+.calc{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.calc-time{
+    margin-top: 30px;
 }
 
+.calc__range{
+    width: 70%;
+    /* margin-left: 50%; */
+    /* margin: 0 auto; */
+}
+.calc__range > input[type="range"]{
+    /* color: #60ccd9  for scroll*/
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, #007aff 0%, #023b6d 0%);
+    outline: none;
+    border-radius: 10px;
+    opacity: 0.8;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.calc__range > input[type="range"]:hover{
+    opacity: 1;
+}
+.calc__range > input[type="range"]::-webkit-slider-thumb{
+
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.calc__range > input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.calc__submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.submit__header{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.submit__num{
+    width: 170px;
+    border: 0;
+    transition: all .2s;
+    background-color: white;
+    }
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submit__btn{
+    margin-top: 50px;
+    width: 250px;
+    height: 80px;
+    border-radius: 30px;
+    background: #007aff;
+    border: 0;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+.submit__btn:hover{
+    box-shadow: 0px 0px 10px 0px #007aff;
+}
 
 /* Section STEPS */
 
 .section-steps{
     background: #007aff;
     padding: 40px 0;
+    width: 100%;
 }
 .section-steps__header{
     width: 327px;
@@ -95,7 +182,8 @@
     display: flex;
     justify-content: space-between;
 }
-.reviews__review{
+.reviews__review,
+.reviews__review-sl{
     width: 330px;
     height: 270px;
     background: white;
@@ -113,4 +201,17 @@
     color: #61908a;
     font-size: 18px;
     font-style: italic;
+}
+.slider__container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.slider{
+    display: none;
+}
+.slider-prev,
+.slider-next{
+    display: none;
 }

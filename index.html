@@ -18,9 +18,12 @@
                 <div class="logo">
                     <span class="logo__span">Семейный </span>займ
                 </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
             </div>
             <div class="header-page__end">
-                <div class="header-page__nav">
+                <nav class="header-page__nav">
                     <ul class="header-page__ul">
                         <li class="header-page__li">
                             <a href="#" class="header-page__link">Получить деньги</a>
@@ -36,7 +39,7 @@
                         </li>
                     </ul>
                     <button class="header-page__btn">Личный кабинет</button>
-                </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -46,11 +49,31 @@
             <h1 class="section-top__header">Быстрые займы за пару кликов</h1>
             <div class="section-top__content">
                 <div class="content__img">
-                    <!-- <img src="img/" alt="smiling_girl" class="image"> -->
+                    <!-- <img src="img/girl.png" alt="smiling_girl" class="image"> -->
                     image here
                 </div>
                 <div class="content__calc">
-                    
+                    <h3 class="calc__header">Выберите сумму и срок</h3>
+                    <div class="calc__range">
+                        <div class="calc">
+                            <div class="calc__sum-left">Сумма</div>
+                            <div class="calc__sum-right" id="zxc-1"></div>
+                        </div>
+                        <input type="range" class="calc__range" id="calc__range-1" min="1000" max="30000" value="1" step="1000">
+
+                        <div class="calc calc-time">
+                            <div class="calc__time-left">Срок</div>
+                            <div class="calc__time-right" id="zxc-2"></div>
+                        </div>
+                        <input type="range" class="calc__range-time" id="calc__range-2" min="1" max="30" value="1">
+                    </div>
+                    <div class="calc__submit">
+                        <h5 class="submit__header">Телефон</h5>
+                        <form class="form" method="get" action="#">
+                            <input class="submit__num" type="tel" id="phone" name="phoneNumber" pattern="[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="7 (_ _ _) _ _ _-_ _-_ _" maxlength="11" minlength="11" onkeypress='validate(event)'>
+                            <button class="submit__btn">Оформить заявку</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,6 +119,27 @@
                     <p class="review__text">Очень радует, что в наше время есть такие компании, как Семейный займ, которые могут помочь в тяжелое время. Благодаря ним дела наладились, спасибо огромное</p>
                 </div>
             </div>
+            <div class="slider__container">
+                <button class="slider-prev">Pr</button>
+                <div class="slider">
+                    <div class="slider-line">
+                        <div class="reviews__review-sl">
+                            <h6 class="review__name">Александр А.</h6>
+                            <p class="review__text">По стечению обстоятельств нужно было найти найти деньги. Оформил займ в Семейный займ. Деньги получил сразу, все прошло хорошо, рекомендую!</p>
+                        </div>
+                        <div class="reviews__review-sl">
+                            <h6 class="review__name">Любовь С.</h6>
+                            <p class="review__text">По совету подруги обратилась сюда за помощью. Никаких проблем при оформлении займа не возникло. Спасибо вам!!</p>
+                        </div>
+                        <div class="reviews__review-sl">
+                            <h6 class="review__name">Артур И.</h6>
+                            <p class="review__text">Очень радует, что в наше время есть такие компании, как Семейный займ, которые могут помочь в тяжелое время. Спасибо огромное</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-next">Nx</button>
+            </div>
+            
         </div>
     </section>
 
@@ -124,5 +168,21 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/range.js"></script>
+    <script src="js/burgerMenu.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        function validate(evt) {
+        var theEvent = evt || window.event;
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode( key );
+        var regex = /[0-9]|\./;
+        if( !regex.test(key) ) {
+            theEvent.returnValue = false;
+            if(theEvent.preventDefault) theEvent.preventDefault();
+        }
+        }
+    </script>
 </body>
 </html>
