@@ -322,5 +322,8 @@
         flex-direction: column;
         align-items: center;
     }
+    .left__text{
+        text-align: center;
+    }
 }
     
