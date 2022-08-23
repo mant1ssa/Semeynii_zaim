@@ -49,8 +49,8 @@
             <h1 class="section-top__header">Быстрые займы за пару кликов</h1>
             <div class="section-top__content">
                 <div class="content__img">
-                    <!-- <img src="img/girl.png" alt="smiling_girl" class="image"> -->
-                    image here
+                    <img src="img/girl2.png" alt="smiling_girl" class="image">
+                    <!-- image here -->
                 </div>
                 <div class="content__calc">
                     <h3 class="calc__header">Выберите сумму и срок</h3>
@@ -70,7 +70,7 @@
                     <div class="calc__submit">
                         <h5 class="submit__header">Телефон</h5>
                         <form class="form" method="get" action="#">
-                            <input class="submit__num" type="tel" id="phone" name="phoneNumber" pattern="[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="7 (_ _ _) _ _ _-_ _-_ _" maxlength="11" minlength="11" onkeypress='validate(event)'>
+                            <input class="submit__num" type="tel" id="phone" name="phoneNumber" required placeholder="7 (_ _ _) _ _ _-_ _-_ _" maxlength="11" minlength="11">
                             <button class="submit__btn">Оформить заявку</button>
                         </form>
                     </div>
@@ -120,7 +120,7 @@
                 </div>
             </div>
             <div class="slider__container">
-                <button class="slider-prev">Pr</button>
+                <button class="slider-prev"></button>
                 <div class="slider">
                     <div class="slider-line">
                         <div class="reviews__review-sl">
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="slider-next">Nx</button>
+                <button class="slider-next"></button>
             </div>
             
         </div>
@@ -172,7 +172,9 @@
     <script src="js/range.js"></script>
     <script src="js/burgerMenu.js"></script>
     <script src="js/slider.js"></script>
-    <script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/numValidate.js"></script>
+    <!-- <script>
         function validate(evt) {
         var theEvent = evt || window.event;
         var key = theEvent.keyCode || theEvent.which;
@@ -183,6 +185,6 @@
             if(theEvent.preventDefault) theEvent.preventDefault();
         }
         }
-    </script>
+    </script> -->
 </body>
 </html>
