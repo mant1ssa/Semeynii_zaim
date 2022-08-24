@@ -53,7 +53,7 @@ let width;
 function init() {
     // console.log('resize');
     const slider = document.querySelector('.slider');
-    slider.style.width = '250px';
+    slider.style.width = '270px';
     // console.log(count);
     rollSlider();
 }
@@ -77,6 +77,6 @@ document.querySelector('.slider-prev').addEventListener('click', function () {
 });
 
 function rollSlider() {
-    sliderLine.style.transform = 'translate(-' + count * 250 + 'px)';
+    sliderLine.style.transform = 'translate(-' + count * 270 + 'px)';
     // console.log(count);
 }

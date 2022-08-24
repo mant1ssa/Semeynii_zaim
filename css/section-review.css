@@ -7,6 +7,7 @@
     margin: 0 auto;
     font-size: 30px;
     padding-bottom: 30px;
+    text-align: center;
 }
 .section-review__reviews{
     display: flex;
@@ -16,8 +17,10 @@
 }
 .reviews__review,
 .reviews__review-sl{
-    /* width: 330px;
-    height: 270px; */
+    width: 330px;
+    height: 270px;
+    min-width: 270px;
+    min-height: 270px;
     background: white;
     padding: 0 25px 25px 25px;
     text-align: center;
@@ -40,10 +43,30 @@
     gap: 10px;
     margin-bottom: 100px;
 }
+.slider-line{
+    display: flex;
+    transition: all ease 1s;
+}
 .slider{
     display: none;
+    /* border: 2px solid black; */
+    /* width: 100%; */
+    max-width: 80%;
+    width: 270px;
+    height: 270px;
+    /* height: 300px; */
+    margin: 20px auto;
+    overflow: hidden;
+}
+.reviews__review-sl{
+    width: 270px;
 }
 .slider-prev,
 .slider-next{
     display: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #007aff;
+    border: 0;
 }
