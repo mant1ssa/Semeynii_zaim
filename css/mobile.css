@@ -6,12 +6,13 @@
     .nav-btn{
         z-index: 5;
         display: block;
-        position: relative;
+        position: absolute;
         width: 30px;
         height: 18px;
         cursor: pointer;
-        position: fixed;
-        right: 23.5%;
+        /* position: fixed; */
+        right: 0%;
+        /* left: 25%; */
     }
     .nav-btn::before,
     .nav-btn::after,
@@ -52,6 +53,9 @@
 		font-size: 34px;
 		font-weight: 600;
     }
+    .header-page__ul{
+        display: none;
+    }
     .header-page__link{
         color: white;
     }
@@ -67,8 +71,8 @@
 }
 
 @media (max-width:804px) {
-    .header-page-nav{
-        /* width: 0; */
+    /* .header-page-nav{
+        width: 0;
     }
     .image{
         display: none;
@@ -89,5 +93,5 @@
     }
     .section-review__reviews{
         display: none;
-    }
+    } */
 }
