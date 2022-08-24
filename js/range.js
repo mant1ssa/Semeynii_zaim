@@ -4,14 +4,14 @@
 const slider1 = document.getElementById('calc__range-1');
 const output1 = document.getElementById('zxc-1');
 
-console.log(slider1);
-console.log(output1);
+// console.log(slider1);
+// console.log(output1);
 
 const slider2 = document.getElementById('calc__range-2');
 const output2 = document.getElementById('zxc-2');
 
-console.log(slider2);
-console.log(output2);
+// console.log(slider2);
+// console.log(output2);
 
 
 
