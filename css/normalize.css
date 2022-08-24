@@ -93,6 +93,7 @@ img{
   
   a {
     background-color: transparent;
+    text-decoration: none;
   }
   
   /**
@@ -364,4 +365,8 @@ img{
   
   [hidden] {
     display: none;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
   }
