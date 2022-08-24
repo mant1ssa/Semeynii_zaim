@@ -80,4 +80,14 @@
         width: 60%;
         margin: 0 auto;
     }
+    .slider{
+        display: block;
+    }
+    .slider-prev,
+    .slider-next{
+        display: block;
+    }
+    .section-review__reviews{
+        display: none;
+    }
 }
