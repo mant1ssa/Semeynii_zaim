@@ -44,7 +44,7 @@
     color: #dde8f0;
 }
 .footer__right{
-    width: calc(100% - 30% - 20%);
+    /* width: calc(100% - 30% - 20%); */
 }
 .right_text{
     margin: 0;
