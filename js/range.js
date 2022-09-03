@@ -30,6 +30,11 @@ slider1.addEventListener("touchmove", function(){
     var color = 'linear-gradient(90deg, #007aff ' + x + '%, #023b6d ' + x + '%)';
     slider1.style.background = color;
 })
+slider2.addEventListener("touchmove", function(){
+    var x = slider2.value * 3.33;
+    var color = 'linear-gradient(90deg, #007aff ' + x + '%, #023b6d ' + x + '%)';
+    slider2.style.background = color;
+})
 slider1.addEventListener("mousemove", function(){
     var x = slider1.value / 300;
     var color = 'linear-gradient(90deg, #007aff ' + x + '%, #023b6d ' + x + '%)';
