@@ -70,6 +70,9 @@
     background: blue;
     border-radius: 50%;
     cursor: pointer;
+    /* outline: 1px solid black; */
+    /* box-shadow: 0 0 0 6px rgb(218, 20, 20), 0 0 0 12px #888; */
+
 }
 .calc__range > input[type="range"]::-moz-range-thumb{
     -webkit-appearance: none;

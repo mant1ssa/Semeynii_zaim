@@ -71,6 +71,14 @@
     }
 }
 
+@media (max-width:1120px) {
+    .slider__container{
+        display: block;
+    }
+    .section-review__reviews{
+        display: none;
+    }
+}
 @media (max-width:804px) {
     /* .header-page-nav{
         width: 0;
@@ -89,17 +97,6 @@
         display: block;
         width: 270px !important;
         height: 270px;
-    }
-    .slider-prev,
-    .slider-next{
-        display: block;
-        
-    }
-    .slider__container{
-        display: block;
-    }
-    .section-review__reviews{
-        display: none;
     }
     .footer__left{
         width: 100%;

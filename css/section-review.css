@@ -22,7 +22,8 @@
 .reviews__review,
 .reviews__review-sl{
     width: 330px;
-    height: 270px;
+    /* height: 270px; */
+    height: auto;
     min-width: 270px;
     min-height: 270px;
     background: white;
@@ -98,6 +99,7 @@
 .slick-track{
     display: flex;
     align-items: flex-start;
+    column-gap: 500px;
 }
 
 .slider__container .slick-dots{
